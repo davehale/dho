@@ -9,6 +9,7 @@ defined ( "DHO_LOGS" ) || define ( "DHO_LOGS", (DOC_ROOT . "dho_logs/") );
 // define domain root url
 defined ( 'URL_BASE' ) || define ( 'URL_BASE', 'http://' . $_SERVER ['SERVER_NAME'] . "/" );
 
+
 // define website apps directories
 defined ( 'WEBSITE_MVC_DIR' ) || define ( 'WEBSITE_MVC_DIR',( DOC_ROOT . 'website_mvc_dir/') );
 defined ( "WEBSITE_MODULE_FOLDER" ) || define ( "WEBSITE_MODULE_FOLDER", (WEBSITE_MVC_DIR . "modules/" ));
