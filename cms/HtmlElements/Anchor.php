@@ -5,21 +5,7 @@ namespace dho\cms\HtmlElements;
 
 class Anchor extends GlobalAttributes {
 	
-	/**
-	 * holds total anchor id count
-	 * @var static int
-	 */
-	  public static $counter = 0;
-	/**
-	 * specifies this instance id
-	 * @var int
-	 */
-	protected $instanceID;
-	/**
-	 * specifies this anchors parentID
-	 * @var int
-	 */
-	protected $parentID;
+	
 	/**
 	 * Specifies the URL of the page the link goes to
 	 * 
@@ -70,6 +56,107 @@ class Anchor extends GlobalAttributes {
 	protected $anchorText;
 	
 	
+
+	
+
+	/**
+	 * @return the $href
+	 */
+	public function getHref() {
+		return $this->href;
+	}
+
+	/**
+	 * @return the $hreflang
+	 */
+	public function getHreflang() {
+		return $this->hreflang;
+	}
+
+	/**
+	 * @return the $media
+	 */
+	public function getMedia() {
+		return $this->media;
+	}
+
+	/**
+	 * @return the $rel
+	 */
+	public function getRel() {
+		return $this->rel;
+	}
+
+	/**
+	 * @return the $target
+	 */
+	public function getTarget() {
+		return $this->target;
+	}
+
+	/**
+	 * @return the $type
+	 */
+	public function getType() {
+		return $this->type;
+	}
+
+	/**
+	 * @return the $anchorText
+	 */
+	public function getAnchorText() {
+		return $this->anchorText;
+	}
+
+	/**
+	 * @param string $href
+	 */
+	public function setHref($href) {
+		$this->href = $href;
+	}
+
+	/**
+	 * @param string $hreflang
+	 */
+	public function setHreflang($hreflang) {
+		$this->hreflang = $hreflang;
+	}
+
+	/**
+	 * @param string $media
+	 */
+	public function setMedia($media) {
+		$this->media = $media;
+	}
+
+	/**
+	 * @param string $rel
+	 */
+	public function setRel($rel) {
+		$this->rel = $rel;
+	}
+
+	/**
+	 * @param string $target
+	 */
+	public function setTarget($target) {
+		$this->target = $target;
+	}
+
+	/**
+	 * @param string $type
+	 */
+	public function setType($type) {
+		$this->type = $type;
+	}
+
+	/**
+	 * @param string $anchorText
+	 */
+	public function setAnchorText($anchorText) {
+		$this->anchorText = $anchorText;
+	}
+
 	function __construct(
 			$anchorText="Click Me",
 			$href=URL_BASE,
@@ -87,7 +174,6 @@ class Anchor extends GlobalAttributes {
 		$this->hreflang=$hreflang;
 		$this->media=$media;
 		
-		 $this->id = ++self::$counter;
 	}
 	
 	public function show(){

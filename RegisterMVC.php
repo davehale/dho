@@ -24,6 +24,12 @@ defined ( 'DEFAULT_LANGUAGE' ) || define ( 'DEFAULT_LANGUAGE', 'en' );
 // set up error reporting
 defined ("ERROR_REPORTING")|| define ( 'ERROR_REPORTING', 'on' );
 
+
+//cms defaults
+defined ( 'DEFAULT_MENU_NAME' ) || define ( 'DEFAULT_MENU_NAME', 'default' );
+
+
+
 // default php autoloader
 spl_autoload_extensions ( ".php" );
 spl_autoload_register ();

@@ -11,11 +11,7 @@ abstract class GlobalAttributes {
 	
 	
 	
-	/**
-	 * specifies this instance id
-	 * @var int
-	 */
-	protected $instanceID;
+
 	/**
 	 * Specifies a shortcut key to activate/focus an element
 	 *
